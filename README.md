@@ -34,3 +34,14 @@ PUT http://localhost:8080/rest/users/{id}
 ```sh
 DELETE  http://localhost:8080/rest/users/{id}
 ```
+# For create database :
+```sh
+CREATE TABLE users (
+    id BIGINT NOT NULL IDENTITY PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    citizen VARCHAR(255),
+    region VARCHAR(255),
+    birth_date DATE
+)
+```
